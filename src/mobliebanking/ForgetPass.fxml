@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobliebanking.ForgetPassController">
+   <children>
+      <Label layoutX="794.0" layoutY="135.0" prefHeight="31.0" prefWidth="177.0" text="Forget Password ?" textFill="#03bafc" underline="true">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <TextField fx:id="Mail" layoutX="774.0" layoutY="243.0" onAction="#Mail" prefHeight="38.0" prefWidth="216.0" promptText="Enter Email" />
+      <TextField fx:id="Color" layoutX="774.0" layoutY="328.0" onAction="#Color" prefHeight="38.0" prefWidth="216.0" promptText="Enter Favroute Color" />
+      <Button fx:id="VerifyBtn" layoutX="863.0" layoutY="440.0" mnemonicParsing="false" onAction="#VerifyBtnOnAction" prefHeight="38.0" prefWidth="157.0" text="Verify" textAlignment="CENTER" textFill="#e31b09e8">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7894737124443054" green="0.16081871092319489" blue="0.16081871092319489" opacity="0.8299999833106995" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <AnchorPane layoutY="-2.0" prefHeight="700.0" prefWidth="530.0" style="-fx-background-color: #03bafc;" />
+      <Label layoutX="159.0" layoutY="211.0" text="EzzyPay">
+         <font>
+            <Font name="Dubai Medium" size="69.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="322.0" text="Make Transfer Easier">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="637.0" layoutY="335.0" prefHeight="25.0" prefWidth="130.0" text="Sequrity Question:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="717.0" layoutY="247.0" prefHeight="31.0" prefWidth="48.0" text="Email :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="564.0" layoutY="654.0" mnemonicParsing="false" onAction="#BackBtnOnAction" text="Back" />
+   </children>
+</AnchorPane>

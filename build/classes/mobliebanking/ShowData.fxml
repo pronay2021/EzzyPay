@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="858.0" prefWidth="1267.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobliebanking.TableController">
+   <children>
+      
+       
+      <TableView layoutX="34.0" layoutY="119.0" prefHeight="649.0" prefWidth="1214.0">
+        <columns>
+          <TableColumn fx:id="Fname" prefWidth="108.99996948242188" text="FirstName" />
+          <TableColumn fx:id="Lname" prefWidth="61.0" text="LastName" />
+            <TableColumn fx:id="E" prefWidth="55.0" text="Email" />
+            <TableColumn fx:id="Uname" prefWidth="87.0" text="UserName" />
+            <TableColumn fx:id="G" prefWidth="63.0" text="Gender" />
+            <TableColumn fx:id="C" prefWidth="75.0" text="Country" />
+            <TableColumn fx:id="PNumber" prefWidth="114.0" text="PhoneNumber" />
+            <TableColumn fx:id="Bdate" prefWidth="96.0" text="BirthDate" />
+            <TableColumn fx:id="Add" prefWidth="69.0" text="Address" />
+            <TableColumn fx:id="Ref" prefWidth="77.0" text="Reference" />
+            <TableColumn fx:id="Pass" prefWidth="77.0" text="Password" />
+            <TableColumn fx:id="Cre" prefWidth="53.0" text="Credit" />
+            <TableColumn fx:id="Img" prefWidth="70.0" text="Image" />
+            <TableColumn fx:id="I1" prefWidth="110.0" text="Info1" />
+            <TableColumn fx:id="I2" prefWidth="84.0" text="info2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

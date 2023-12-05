@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobliebanking.LoginFormController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="706.0" prefWidth="530.0" style="-fx-background-color: #03bafc;">
+         <children>
+            <Label layoutX="149.0" layoutY="201.0" text="EzzyPay">
+               <font>
+                  <Font name="Dubai Medium" size="69.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="182.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Task/src/task/images/output-onlinepngtools.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="187.0" layoutY="312.0" text="Make Transfer Easier">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="92.0" fitWidth="94.0" layoutX="992.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/output-onlinepngtools.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="772.0" layoutY="172.0" text="LogIn" textFill="#03bafc">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PnumTextField" layoutX="676.0" layoutY="307.0" prefHeight="36.0" prefWidth="294.0" promptText="Enter Phone Number" />
+      <Button fx:id="logInBtn" layoutX="797.0" layoutY="483.0" mnemonicParsing="false" onAction="#logInBtnOnAction" prefHeight="36.0" prefWidth="82.0" text="LogIn" textFill="#03bafc" />
+      <Label layoutX="676.0" layoutY="410.0" prefHeight="26.0" prefWidth="294.0" />
+      <Button layoutX="569.0" layoutY="642.0" mnemonicParsing="false" onAction="#BackBtnOnAction" prefHeight="26.0" prefWidth="57.0" text="Back" />
+      <PasswordField fx:id="passTextField" layoutX="676.0" layoutY="374.0" prefHeight="36.0" prefWidth="294.0" promptText="Enter Password" />
+      <Label fx:id="ForgotPass" accessibleRole="BUTTON" layoutX="694.0" layoutY="413.0" onMouseClicked="#ForgotPassOnAction" prefHeight="17.0" prefWidth="157.0" text="Forgot Password?" textAlignment="CENTER" textFill="#2474f5" underline="true">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

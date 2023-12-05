@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="form" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobliebanking.EducationController">
+   <children>
+      <ImageView fitHeight="140.0" fitWidth="1112.0" layoutY="-6.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/top_background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="912.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/Compressed/First_SceneBuilder/src/first_scenebuilder/logo3_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="565.0" fitWidth="510.0" layoutX="-2.0" layoutY="135.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/BillPay_GUI_Img/Gyq.gif" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="Education" layoutX="704.0" layoutY="272.0" onAction="#educationbill" prefHeight="31.0" prefWidth="225.0" promptText="Enter Organization Name" style="-fx-background-color: #00BFFF;" />
+      <TextField fx:id="PayIdTextF" layoutX="699.0" layoutY="343.0" prefHeight="43.0" prefWidth="225.0" promptText="Enter Payment Id" />
+      <TextField fx:id="ContactNoTextF" layoutX="704.0" layoutY="429.0" prefHeight="43.0" prefWidth="225.0" promptText="Enter Contact Number" />
+      <TextField fx:id="AmountTextF" layoutX="704.0" layoutY="508.0" prefHeight="43.0" prefWidth="225.0" promptText="Enter Amount Of Money" />
+      <Label layoutX="745.0" layoutY="149.0" prefHeight="67.0" prefWidth="179.0" text="Education">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Text fill="#fcfcfc" layoutX="435.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EzzyPay" textAlignment="CENTER" wrappingWidth="241.2744140625">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Text>
+      <Text fill="#d0c6c6" layoutX="425.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make Transfer Easier">
+         <font>
+            <Font name="Bodoni MT Italic" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="100.0" fitWidth="105.0" layoutX="993.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/logo3.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="530.0" layoutY="649.0" mnemonicParsing="false" onAction="#BackBtnOnAction" prefHeight="31.0" prefWidth="90.0" text="Back" />
+      <Button layoutX="765.0" layoutY="595.0" mnemonicParsing="false" onAction="#SendBtnOnAction" prefHeight="31.0" prefWidth="118.0" text="Submit" />
+   </children>
+</AnchorPane>

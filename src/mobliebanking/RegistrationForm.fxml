@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="form" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #dae6ed;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobliebanking.RegistrationFormController">
+   <children>
+      <ComboBox fx:id="Gender" layoutX="157.0" layoutY="299.0" onAction="#genderSelect" prefHeight="31.0" prefWidth="301.0" promptText="Gender" />
+      <Label layoutX="439.0" layoutY="77.0" prefHeight="59.0" prefWidth="223.0" text="Create Account" textFill="#1536ae">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <effect>
+            <Glow level="0.58">
+               <input>
+                  <Bloom />
+               </input>
+            </Glow>
+         </effect>
+      </Label>
+      <DatePicker fx:id="Bdate" editable="false" layoutX="659.0" layoutY="369.0" prefHeight="31.0" prefWidth="301.0" promptText="Birth Date" />
+      <Button fx:id="resetBtn" defaultButton="true" layoutX="431.0" layoutY="613.0" mnemonicParsing="false" onAction="#resetBtnOnAction" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #3884e8;" text="Reset">
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Button fx:id="signUpBtn" layoutX="619.0" layoutY="613.0" mnemonicParsing="false" onAction="#signUpBtnOnAction" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #3884e8;" text="Sign Up">
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Button fx:id="BackBtn" layoutX="83.0" layoutY="628.0" mnemonicParsing="false" onAction="#BackBtnOnAction" prefHeight="32.0" prefWidth="68.0" text="Back" />
+      <ImageView blendMode="DARKEN" fitHeight="92.0" fitWidth="94.0" layoutX="994.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="Pnumber" labelFloat="true" layoutX="151.0" layoutY="369.0" prefHeight="32.0" prefWidth="301.0" promptText="Phone Number" />
+      <JFXTextField fx:id="Fname" labelFloat="true" layoutX="163.0" layoutY="171.0" prefHeight="32.0" prefWidth="301.0" promptText="First Name" />
+      <JFXTextField fx:id="Lname" labelFloat="true" layoutX="662.0" layoutY="171.0" prefHeight="32.0" prefWidth="301.0" promptText="Last Name" />
+      <JFXTextField fx:id="Email" labelFloat="true" layoutX="163.0" layoutY="239.0" prefHeight="31.0" prefWidth="301.0" promptText="Email" />
+      <JFXTextField fx:id="Uname" labelFloat="true" layoutX="662.0" layoutY="239.0" prefHeight="32.0" prefWidth="301.0" promptText="User Name" />
+      <JFXTextField fx:id="Country" labelFloat="true" layoutX="670.0" layoutY="298.0" prefHeight="32.0" prefWidth="119.0" promptText="Country" />
+      <JFXTextArea fx:id="Address" labelFloat="true" layoutX="151.0" layoutY="431.0" prefHeight="46.0" prefWidth="301.0" promptText="Address" />
+      <JFXTextField fx:id="Referance" labelFloat="true" layoutX="651.0" layoutY="446.0" prefHeight="32.0" prefWidth="301.0" promptText="Reference Number" />
+      <JFXPasswordField fx:id="Password" labelFloat="true" layoutX="151.0" layoutY="505.0" prefHeight="32.0" prefWidth="301.0" promptText="Password" />
+      <JFXPasswordField fx:id="Cpassword" labelFloat="true" layoutX="659.0" layoutY="505.0" prefHeight="32.0" prefWidth="301.0" promptText="Confirm Password" />
+      <JFXTextField fx:id="color" labelFloat="true" layoutX="828.0" layoutY="302.0" prefHeight="26.0" prefWidth="165.0" promptText="Add a secret code" />
+   </children>
+</AnchorPane>

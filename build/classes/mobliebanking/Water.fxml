@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobliebanking.WaterController">
+   <children>
+      <ImageView fitHeight="140.0" fitWidth="1108.0" layoutX="-6.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/top_background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="94.0" layoutX="981.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/logo3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="447.0" layoutY="-2.0" text="EzzyPay" textFill="#eedbdb">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="85.0" text="Make Transfer Easier" textFill="#dad5d5">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="562.0" fitWidth="473.0" layoutX="-1.0" layoutY="141.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/BillPay_GUI_Img/waterbill.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="159.0" layoutY="225.0" text="Water Bill">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="WaterBill" layoutX="689.0" layoutY="271.0" onAction="#Water" prefHeight="39.0" prefWidth="231.0" promptText="Enter Organization Name" style="-fx-background-color: #00BFFF;" />
+      <TextField fx:id="BillNoTextF" layoutX="691.0" layoutY="358.0" prefHeight="39.0" prefWidth="231.0" promptText="Enter Bill Number" />
+      <TextField fx:id="ContactNoTextF" layoutX="691.0" layoutY="443.0" prefHeight="39.0" prefWidth="231.0" promptText="Enter Contact Number" />
+      <Button layoutX="769.0" layoutY="603.0" mnemonicParsing="false" onAction="#SendBtnOnAction" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #00BFFF;" text="Submit" />
+      <TextField fx:id="AmountTextF" layoutX="691.0" layoutY="517.0" prefHeight="39.0" prefWidth="231.0" promptText="Enter Amount Of Money" />
+      <Button layoutX="484.0" layoutY="641.0" mnemonicParsing="false" onAction="#BackBtnOnAction" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #00BFFF;" text="Back" />
+   </children>
+</AnchorPane>

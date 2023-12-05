@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobliebanking.FoodController">
+   <children>
+      <ImageView fitHeight="154.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/top_background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="94.0" layoutX="992.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/logo3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="426.0" layoutY="-18.0" prefHeight="100.0" prefWidth="249.0" text="Ezzypay" textFill="#eedbdb">
+         <font>
+            <Font name="Dubai Regular" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="90.0" prefHeight="33.0" prefWidth="241.0" text="Make Transfer Easier" textFill="#dad5d5">
+         <font>
+            <Font name="Comic Sans MS Italic" size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="140.0" prefHeight="562.0" prefWidth="249.0" style="-fx-background-color: #FDEEF4;">
+         <children>
+            <Label layoutX="96.0" layoutY="81.0" prefHeight="33.0" prefWidth="45.0" text="Cart">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="153.0" text="Burger:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Burger" layoutX="87.0" layoutY="151.0" prefHeight="25.0" prefWidth="120.0" promptText="Quantity" />
+            <Label layoutX="36.0" layoutY="192.0" text="Pasta:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Pasta" layoutX="87.0" layoutY="190.0" prefHeight="25.0" prefWidth="120.0" promptText="Quantity" />
+            <Label layoutX="40.0" layoutY="236.0" text="Pizza:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Pizza" layoutX="87.0" layoutY="234.0" prefHeight="25.0" prefWidth="120.0" promptText="Quantity" />
+            <Label layoutX="31.0" layoutY="279.0" text="Coffee:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Coffee" layoutX="87.0" layoutY="277.0" prefHeight="25.0" prefWidth="120.0" promptText="Quantity" />
+            <Label layoutX="36.0" layoutY="318.0" text="Pastry:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Pastry" layoutX="87.0" layoutY="316.0" prefHeight="25.0" prefWidth="120.0" promptText="Quantity" />
+            <Label layoutX="40.0" layoutY="362.0" text="Soup:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Soup" layoutX="87.0" layoutY="360.0" prefHeight="25.0" prefWidth="120.0" promptText="Quantity" />
+            <TextField fx:id="bill" layoutX="87.0" layoutY="423.0" prefHeight="25.0" prefWidth="120.0" />
+            <Button layoutX="114.0" layoutY="476.0" mnemonicParsing="false" onAction="#PayBillOnAction" text="Pay Bill" />
+            <Button layoutX="99.0" layoutY="523.0" mnemonicParsing="false" onAction="#BackBtnOnAction" prefHeight="25.0" prefWidth="92.0" text="Back" />
+            <Button fx:id="Total" layoutX="10.0" layoutY="419.0" mnemonicParsing="false" onAction="#TotalBill" prefHeight="33.0" prefWidth="61.0" text="Total" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="308.0" layoutY="229.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/Food_Iface_GUI_Img/Burger.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="575.0" layoutY="229.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/Food_Iface_GUI_Img/Pasta.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="853.0" layoutY="229.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/Food_Iface_GUI_Img/Pizza.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="161.0" layoutX="328.0" layoutY="489.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/Food_Iface_GUI_Img/ColdCoffee.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="150.0" layoutX="617.0" layoutY="489.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/Food_Iface_GUI_Img/Pastry.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="150.0" layoutX="865.0" layoutY="481.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/Food_Iface_GUI_Img/soup.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="314.0" layoutY="190.0" text="Chicken Cheese Delight Burger">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="636.0" layoutY="190.0" text="White Sauce Pasta">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="891.0" layoutY="190.0" text="pepperoni pizza">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="462.0" text="Cold Coffee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="641.0" layoutY="462.0" text="Chocolate Pastry">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="910.0" layoutY="453.0" text="Thai Soup">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="386.0" text="300 tk">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="680.0" layoutY="386.0" text="180 tk">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="922.0" layoutY="386.0" text="515 tk">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="659.0" text="150 tk">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="680.0" layoutY="650.0" text="80 tk">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="935.0" layoutY="650.0" text="110 tk">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
